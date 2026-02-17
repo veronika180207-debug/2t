@@ -14,10 +14,10 @@ namespace _2t
     }
     internal class BankAccount
     {
-        public string AccountNumber { get; set; }
-        public string Owner { get; set; }
+        public string AccountNumber { get; }
+        public string Owner { get;}
         public decimal Balance { get; private set; }
-        public AccountType Type { get; set; }
+        public AccountType Type { get; }
 
         // Конструктор
         public BankAccount(string accountNumber, string owner, decimal balance,AccountType type)
